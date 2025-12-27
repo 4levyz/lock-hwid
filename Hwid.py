@@ -15,7 +15,7 @@ def printSlow(text):
 r = requests.get("https://pastebin.com/raw/zXNKxtaa")
 hwid = str(str(subprocess.check_output('wmic csproduct get uuid')).strip().replace(r"\r", "").split(r"\n")[1].strip())
 
-system("cls & title " + "HWID-LOCK │ By NewYear`z#5505")
+system("cls & title " + "HWID-LOCK │ By Null.dev")
 def checking():
 	sleep(0.5)  
 	if hashlib.sha256(hwid.encode('utf-8')).hexdigest() in r.text:
